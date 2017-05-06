@@ -35,12 +35,15 @@ h3 {
 }
 
 
+
+
 /*====================================================
                         HOME
 ======================================================*/
 
 #home {
     height: 100%;
+    background-color: black;
     
 }
 
@@ -69,8 +72,56 @@ h3 {
 }
 
 #myCarousel {
-    height: 100%;
+    height: 100vh;
 }
+
+.carousel .active {
+    opacity: 1 !important;
+}
+
+.carousel .active.left {
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.carousel .item {
+    height: 100vh; width: 100%
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#slideimg1 {
+    background-image: url('../img/homepage/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#slideimg2 {
+    background-image: url('../img/homepage/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#slideimg3 {
+    background-image: url('../img/homepage/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#slideimg4 {
+    background-image: url('../img/homepage/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
 
 
 
@@ -85,6 +136,8 @@ h3 {
     background-position: center;
     background-attachment: fixed;
 }
+
+
 
 
 /*====================================================
@@ -133,6 +186,8 @@ h3 {
 }
 
 
+
+
 /*====================================================
                        ANIMATE
 ======================================================*/
@@ -141,23 +196,31 @@ h3 {
 #home-heading,
 #home-btn {
     -webkit-animation-duration: .5s;
-            animation-duration: .5s;
+    animation-duration: .5s;
 }
 
 #home-cover {
     -webkit-animation-delay: .1s;
-            animation-delay: .1s;
+    animation-delay: .1s;
 }
 
 #home-heading {
     -webkit-animation-delay: .5s;
-            animation-delay: .5s;
+    animation-delay: .5s;
 }
 
 #home-btn {
     -webkit-animation-delay: 1s;
-            animation-delay: 1s;
+    animation-delay: 1s;
 }
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
 
 
 /*====================================================
@@ -185,6 +248,8 @@ h3 {
     background-color: #34c6d3;
     margin: 0 auto 30px auto;
 }
+
+
 
 
 /*====================================================
@@ -224,15 +289,18 @@ h3 {
 }
 
 
+
+
 /*====================================================
                        ABOUT
 ======================================================*/
 
 #about-bg-diagonal {
     width: 60%;
-    height: 700px;
+    height: 100%;
     float: right;
-    background-image: url(../img/bg-about.jpg);
+    background-color: black;
+    background: url(../img/about_background.jpg) fixed;
     border-left: 200px solid #fff;
     border-top: 700px solid transparent;
 }
@@ -266,6 +334,8 @@ h3 {
 }
 
 
+
+
 /*====================================================
                        WORK
 ======================================================*/
@@ -288,9 +358,11 @@ h3 {
 
 .img-wrapper img:hover {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     cursor: zoom-in;
 }
+
+
 
 
 /*====================================================
@@ -320,6 +392,8 @@ h4.team-member-designation {
     letter-spacing: 1px;
     margin-top: 5px;
 }
+
+
 
 
 /*====================================================
@@ -354,6 +428,8 @@ h4.team-member-designation {
 .social-icon i:hover {
     color: #34c6d3;
 }
+
+
 
 
 /*====================================================
@@ -422,6 +498,8 @@ h4.team-member-designation {
 }
 
 
+
+
 /*====================================================
                        PRICING
 ======================================================*/
@@ -481,6 +559,8 @@ ul.pricing-spec li p {
 }
 
 
+
+
 /*====================================================
                        STATS
 ======================================================*/
@@ -517,6 +597,8 @@ ul.pricing-spec li p {
 }
 
 
+
+
 /*====================================================
                        CLIENTS
 ======================================================*/
@@ -524,6 +606,8 @@ ul.pricing-spec li p {
 .client {
     padding: 40px 0;
 }
+
+
 
 
 /*====================================================
@@ -557,7 +641,11 @@ footer {
 address {
     color: #fff;
 }
-address strong { font-size: 16px; }
+
+address strong {
+    font-size: 16px;
+}
+
 address strong,
 #phone-fax-email strong {
     letter-spacing: 1px;
@@ -573,6 +661,8 @@ form .form-control {
     margin-bottom: 20px;
     color: #fff;
 }
+
+
 
 
 /*====================================================
@@ -620,6 +710,8 @@ form .form-control {
 }
 
 
+
+
 /*====================================================
                        NAVIGATION
 ======================================================*/
@@ -629,6 +721,7 @@ form .form-control {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
+
 .vesco-top-nav {
     background: rgba(0, 0, 0, 0.7);
     padding: 7px 0;
@@ -639,21 +732,21 @@ form .form-control {
 }
 
 .navbar-nav {
-    float: right;    
+    float: right;
 }
 
 .navbar-brand {
     padding: 1%;
-    margin:  0;
+    margin: 0;
 }
 
-.navbar-brand>img {
+.navbar-brand > img {
     height: 130%;
     display: block;
     margin: auto;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
@@ -661,8 +754,8 @@ form .form-control {
     font-weight: 700;
 }
 
-.navbar-nav>li>a:hover,
-.navbar-nav>li>a:focus {
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
     background: none;
     color: #34c6d3;
 }
@@ -681,6 +774,6 @@ form .form-control {
     max-height: none !important;
 }
 
-.vesco-top-nav ul.navbar-nav>li.active>a {
+.vesco-top-nav ul.navbar-nav > li.active > a {
     color: #34c6d3;
 }
