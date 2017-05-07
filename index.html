@@ -42,6 +42,9 @@
 
     <!-- responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- @3c -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 </head>
@@ -103,20 +106,34 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
         </ol>   
 
         <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="item active slideimg1">
-                <img src="img/homepage/img1.jpg" alt="First Slide">
+                <img src="img/homepage/img-1.jpg" alt="First Slide">
             </div>
 
             <div class="item slideimg2">
-                <img src="img/homepage/img2.jpg" alt="Second Slide">
+                <img src="img/homepage/img-2.jpg" alt="Second Slide">
             </div>
 
             <div class="item slideimg3">
-                <img src="img/homepage/img3.jpg" alt="Third Slide">
+                <img src="img/homepage/img-3.jpg" alt="Third Slide">
+            </div>
+            
+            <div class="item slideimg4">
+                <img src="img/homepage/img-4.jpg" alt="Third Slide">
+            </div>
+            
+            <div class="item slideimg5">
+                <img src="img/homepage/img-5.jpg" alt="Third Slide">
+            </div>
+            <div class="item slideimg6">
+                <img src="img/homepage/img-6.jpg" alt="Third Slide">
             </div>
         </div>
 
@@ -139,6 +156,107 @@
         </div>
 
     </section>
+    
+        <!-- Services -->
+    <section id="services">
+
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3> Services </h3>
+                <div class="content-title-underline"></div>
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+
+                        <div class="service-item wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-paint-brush fa-3x"></i>
+                            </div>
+
+                            <div class="service-item-title">
+                                <h3> Web Design</h3>
+                            </div>
+
+                            <div class="service-item-desc">
+                                <p>Tamen fabulas id varias tamen qui nam enim.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="service-item wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-laptop fa-3x"></i>
+                            </div>
+
+                            <div class="service-item-title">
+                                <h3> Web Development</h3>
+                            </div>
+
+                            <div class="service-item-desc">
+                                <p>Tamen fabulas id varias tamen qui nam enim.</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                                        <div class="col-md-6 col-sm-6">
+
+                        <div class="service-item wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-paint-brush fa-3x"></i>
+                            </div>
+
+                            <div class="service-item-title">
+                                <h3> Web Design</h3>
+                            </div>
+
+                            <div class="service-item-desc">
+                                <p>Tamen fabulas id varias tamen qui nam enim.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="service-item wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                            <div class="service-item-icon">
+                                <i class="fa fa-laptop fa-3x"></i>
+                            </div>
+
+                            <div class="service-item-title">
+                                <h3> Web Development</h3>
+                            </div>
+
+                            <div class="service-item-desc">
+                                <p>Tamen fabulas id varias tamen qui nam enim.</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
 
     <!-- About -->
     <section id="about">
@@ -396,19 +514,37 @@
                     </div>
                     <div class="col-md-6">
                         <div id="contact-right">
+                            
+                            
 
                             <h3>Contact Us</h3>
                             <form action="#">
-
-                                <input type="text" name="full-name" placeholder="Full Name" class="form-control">
-                                <input type="text" name="email" placeholder="Email Address" class="form-control">
-                                <textarea rows="5" name="message" placeholder="Message..." class="form-control"></textarea>
+                                
+                                <div class="input-group ">
+                                    <span class="input-group-addon "><i class="fa fa-envelope-o fa-user"></i></span>
+                                    <input class="form-control" type="text" placeholder="Full Name">
+                                    
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                                    <input class="form-control" type="text" placeholder="Email address">
+                                
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-phone"></i></span>
+                                    <input class="form-control" type="text" placeholder="Phone ">
+                                
+                                </div>
+                                
+                                    <textarea rows="5" name="message" placeholder="Message..." class="form-control"></textarea>
+                                
+                    
 
                                 <div id="send-btn">
                                     <a class="btn btn-lg btn-general btn-white" href="#" role="button">SEND</a>
-                                </div>
+                                </div> 
 
-                            </form>
+                            </form> 
 
                         </div>
                     </div>

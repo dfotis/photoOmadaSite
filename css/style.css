@@ -3,7 +3,7 @@
 
                 Font Family                 : Roboto Condensed
                 
-                Greenish Blue               : #34c6d3       (Buttons, Icons, Links, Lines & Backgrounds)
+                Foromada Green              : #4CAF50       (Buttons, Icons, Links, Lines & Backgrounds)
                 Steel Gray                  : #41464b       (Headings)
                 Blue Bayoux                 : #64707b       (Paragraphs)
                 White                       : #fff          (Text With Black Backgrounds)
@@ -13,7 +13,6 @@
 
 
 /* General CSS */
-
 html,
 body {
     height: 100%;
@@ -86,6 +85,7 @@ h3 {
 }
 
 .carousel .item {
+    
     height: 100vh; width: 100%
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -94,28 +94,42 @@ h3 {
 }
 
 #slideimg1 {
-    background-image: url('../img/homepage/img1.jpg');
+    background-image: url('../img/homepage/img-1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 #slideimg2 {
-    background-image: url('../img/homepage/img2.jpg');
+    background-image: url('../img/homepage/img-2.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 #slideimg3 {
-    background-image: url('../img/homepage/img3.jpg');
+    background-image: url('../img/homepage/img-3.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 #slideimg4 {
-    background-image: url('../img/homepage/img4.jpg');
+    background-image: url('../img/homepage/img-4.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#slideimg5 {
+    background-image: url('../img/homepage/img-4.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#slideimg6 {
+    background-image: url('../img/homepage/img-4.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -165,13 +179,13 @@ h3 {
 }
 
 .btn-blue {
-    border-color: #34c6d3;
-    color: #34c6d3;
+    border-color: #4CAF50; /* Αλλαγή Χρώματος Σε Πράσινο απο Γαλάζιο */
+    color: #4CAF50; /* Αλλαγή Χρώματος Σε Πράσινο απο Γαλάζιο */
 }
 
 .btn-blue:hover,
 .btn-blue:focus {
-    background-color: #34c6d3;
+    background-color: #4CAF50;
     color: #fff;
 }
 
@@ -245,7 +259,7 @@ h3 {
 .content-title-underline {
     width: 30px;
     height: 3px;
-    background-color: #34c6d3;
+    background-color: #4CAF50;
     margin: 0 auto 30px auto;
 }
 
@@ -263,7 +277,7 @@ h3 {
 }
 
 .service-item-icon i {
-    color: #34c6d3;
+    color: #4CAF50;
     float: left;
     padding: 15px;
     margin-right: 25px;
@@ -274,7 +288,7 @@ h3 {
 
 .service-item:hover .service-item-icon i {
     color: #fff;
-    background-color: #34c6d3;
+    background-color: #4CAF50;
 }
 
 .service-item-title h3 {
@@ -385,7 +399,7 @@ h4.team-member-name {
 }
 
 h4.team-member-designation {
-    color: #34c6d3;
+    color: #4CAF50;
     font-size: 15px;
     font-weight: 700;
     font-style: italic;
@@ -426,7 +440,7 @@ h4.team-member-designation {
 }
 
 .social-icon i:hover {
-    color: #34c6d3;
+    color: #4CAF50;
 }
 
 
@@ -505,13 +519,13 @@ h4.team-member-designation {
 ======================================================*/
 
 .pricing-box {
-    border: 3px solid #34c6d3;
+    border: 3px solid #4CAF50;
     padding: 50px 0;
     margin: 40px 0;
 }
 
 h4.pricing-title {
-    background-color: #34c6d3;
+    background-color: #4CAF50;
     color: #fff;
     display: inline-block;
     padding: 7px 15px;
@@ -546,11 +560,11 @@ ul.pricing-spec li p {
 .pricing-box-lg {
     padding: 90px 0;
     margin: 0;
-    background-color: #34c6d3;
+    background-color: #4CAF50;
 }
 
 .pricing-box-lg h4.pricing-title {
-    color: #34c6d3;
+    color: #4CAF50;
     background-color: #fff;
 }
 
@@ -578,7 +592,7 @@ ul.pricing-spec li p {
 }
 
 .stats-item i {
-    color: #34c6d3;
+    color: #4CAF50;
 }
 
 .stats-item h2 {
@@ -651,17 +665,30 @@ address strong,
     letter-spacing: 1px;
 }
 
-form .form-control {
+.input-group{
     background: transparent;
     border-radius: 0;
     border-color: #fff;
+    margin-bottom: 20px;
     font-size: 17px;
     font-weight: 300;
-    padding: 8px 16px;
-    margin-bottom: 20px;
     color: #fff;
 }
 
+.form-control{
+    background-color: inherit;
+    color: #fff;
+}
+
+.input-group-addon{
+    background-color: inherit;
+    color: #4CAF50;
+    min-width: 1.5cm;
+}
+
+#send-btn{
+    margin-top: 20px
+}
 
 
 
@@ -706,7 +733,7 @@ form .form-control {
 }
 
 #footer-menu a:hover {
-    color: #34c6d3;
+    color: #4CAF50;
 }
 
 
@@ -741,7 +768,7 @@ form .form-control {
 }
 
 .navbar-brand > img {
-    height: 130%;
+    height: 100%;
     display: block;
     margin: auto;
 }
@@ -757,7 +784,7 @@ form .form-control {
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
     background: none;
-    color: #34c6d3;
+    color: #4CAF50; /* Πράσινο */
 }
 
 .navbar-toggle {
@@ -774,6 +801,12 @@ form .form-control {
     max-height: none !important;
 }
 
+
 .vesco-top-nav ul.navbar-nav > li.active > a {
-    color: #34c6d3;
+    color: #4CAF50;
+}
+
+/* On Active nav-bar make it green */
+.active {
+    background-color: #808080;
 }
